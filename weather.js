@@ -8,6 +8,7 @@ function tempTeller() {
     if(inputField.value == ''){
 
         document.getElementById('error').style.display = 'block';
+        document.getElementById('whole').style.display = 'none';
 
     }
     
@@ -21,6 +22,7 @@ function tempTeller() {
             sky.innerText = data.weather[0].main;
             windSpeed.innerText = data.wind.speed;
             document.getElementById('error').style.display = 'none';
+            inputField.value = '';
 
         })
     }
