@@ -13,7 +13,7 @@ function tempTeller() {
     }
     
     else{
-        fetch('http://api.openweathermap.org/data/2.5/weather?q=' + inputField.value + '&appid=0db36ee4db64433905185f23dd12fa5f')
+        fetch('https://api.openweathermap.org/data/2.5/weather?q=' + inputField.value + '&appid=0db36ee4db64433905185f23dd12fa5f')
         .then(got => got.json())
         .then(data => {
 
